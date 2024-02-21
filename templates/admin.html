@@ -16,11 +16,11 @@
     <div class="mb-8">
       <h2 class="text-xl font-bold mb-2">Personal Info</h2>
       <form action="/edit/personal-info" method="POST">
-        <input type="text" name="name" placeholder="Name" class="block mb-2 w-full border rounded px-4 py-2">
-        <input type="text" name="phone" placeholder="Phone" class="block mb-2 w-full border rounded px-4 py-2">
-        <input type="text" name="email" placeholder="Email" class="block mb-2 w-full border rounded px-4 py-2">
-        <input type="text" name="linkedin" placeholder="LinkedIn" class="block mb-2 w-full border rounded px-4 py-2">
-        <input type="text" name="github" placeholder="GitHub" class="block mb-2 w-full border rounded px-4 py-2">
+        <input type="text" name="name" placeholder="Name" class="block mb-2 w-full border rounded px-4 py-2" value="Manish Kumar">
+        <input type="text" name="phone" placeholder="Phone" class="block mb-2 w-full border rounded px-4 py-2" value="+917004456733">
+        <input type="text" name="email" placeholder="Email" class="block mb-2 w-full border rounded px-4 py-2" value="manish.jsx@gmail.com">
+        <input type="text" name="linkedin" placeholder="LinkedIn" class="block mb-2 w-full border rounded px-4 py-2" value="linkedin.com/manish-code">
+        <input type="text" name="github" placeholder="GitHub" class="block mb-2 w-full border rounded px-4 py-2" value="github.com/manish-jsx">
         <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded shadow">Update</button>
       </form>
     </div>
@@ -29,7 +29,7 @@
     <div class="mb-8">
       <h2 class="text-xl font-bold mb-2">Objective</h2>
       <form action="/edit/objective" method="POST">
-        <textarea name="objective" placeholder="Objective" class="block mb-2 w-full border rounded px-4 py-2"></textarea>
+        <textarea name="objective" placeholder="Objective" class="block mb-2 w-full border rounded px-4 py-2">Detail-oriented and motivated professional seeking a challenging role as a React Developer. With proficiency in JavaScript and expertise in React.js, I aim to leverage my skills to develop interactive and efficient user interfaces. Eager to contribute to dynamic projects and collaborate with cross-functional teams to deliver high-quality solutions that meet client needs while staying updated with the latest developments in web development technologies.</textarea>
         <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded shadow">Update</button>
       </form>
     </div>
@@ -37,17 +37,16 @@
     <!-- Experience Form -->
     <div class="mb-8">
       <h2 class="text-xl font-bold mb-2">Experience</h2>
-      <!-- Add more input fields as needed -->
+      <!-- Job Experience Items -->
       <form action="/edit/experience" method="POST">
-        <input type="text" name="jobTitle" placeholder="Job Title" class="block mb-2 w-full border rounded px-4 py-2">
-        <input type="text" name="company" placeholder="Company" class="block mb-2 w-full border rounded px-4 py-2">
-        <input type="text" name="startDate" placeholder="Start Date" class="block mb-2 w-full border rounded px-4 py-2">
-        <input type="text" name="endDate" placeholder="End Date" class="block mb-2 w-full border rounded px-4 py-2">
-        <!-- Add more input fields for responsibilities -->
-        <input type="text" name="responsibility1" placeholder="Responsibility 1" class="block mb-2 w-full border rounded px-4 py-2">
-        <input type="text" name="responsibility2" placeholder="Responsibility 2" class="block mb-2 w-full border rounded px-4 py-2">
-        <input type="text" name="responsibility3" placeholder="Responsibility 3" class="block mb-2 w-full border rounded px-4 py-2">
-        <input type="text" name="responsibility4" placeholder="Responsibility 4" class="block mb-2 w-full border rounded px-4 py-2">
+        <input type="text" name="jobTitle" placeholder="Job Title" class="block mb-2 w-full border rounded px-4 py-2" value="Senior Back-End Developer">
+        <input type="text" name="company" placeholder="Company" class="block mb-2 w-full border rounded px-4 py-2" value="Upwork, Fiverr">
+        <input type="text" name="startDate" placeholder="Start Date" class="block mb-2 w-full border rounded px-4 py-2" value="Aug 2022">
+        <input type="text" name="endDate" placeholder="End Date" class="block mb-2 w-full border rounded px-4 py-2" value="Present">
+        <textarea name="responsibility1" placeholder="Responsibility 1" class="block mb-2 w-full border rounded px-4 py-2">Developed tailored web application solutions utilizing Python frameworks including Django, Flask, and FastAPI.</textarea>
+        <textarea name="responsibility2" placeholder="Responsibility 2" class="block mb-2 w-full border rounded px-4 py-2">Designed schemas for both SQL and NoSQL databases, ensuring efficient data management.</textarea>
+        <textarea name="responsibility3" placeholder="Responsibility 3" class="block mb-2 w-full border rounded px-4 py-2">Implemented secure Role-Based Access Control (RBAC) APIs to address specific business requirements.</textarea>
+        <textarea name="responsibility4" placeholder="Responsibility 4" class="block mb-2 w-full border rounded px-4 py-2">Leveraged technologies such as MongoDB, AWS S3, and PostgreSQL to optimize project outcomes.</textarea>
         <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded shadow">Update</button>
       </form>
     </div>
@@ -55,13 +54,12 @@
     <!-- Skills Form -->
     <div class="mb-8">
       <h2 class="text-xl font-bold mb-2">Skills</h2>
-      <!-- Add more input fields as needed -->
       <form action="/edit/skills" method="POST">
-        <input type="text" name="languages" placeholder="Languages" class="block mb-2 w-full border rounded px-4 py-2">
-        <input type="text" name="frameworks" placeholder="Frameworks" class="block mb-2 w-full border rounded px-4 py-2">
-        <input type="text" name="databases" placeholder="Databases" class="block mb-2 w-full border rounded px-4 py-2">
-        <input type="text" name="tools" placeholder="Tools & Technologies" class="block mb-2 w-full border rounded px-4 py-2">
-        <input type="text" name="concepts" placeholder="Concepts" class="block mb-2 w-full border rounded px-4 py-2">
+        <input type="text" name="languages" placeholder="Languages" class="block mb-2 w-full border rounded px-4 py-2" value="Python, JavaScript">
+        <input type="text" name="frameworks" placeholder="Frameworks" class="block mb-2 w-full border rounded px-4 py-2" value="React.js, Angular, Django, Flask, FastAPI">
+        <input type="text" name="databases" placeholder="Databases" class="block mb-2 w-full border rounded px-4 py-2" value="PostgreSQL, MongoDB, MySQL">
+        <input type="text" name="tools" placeholder="Tools & Technologies" class="block mb-2 w-full border rounded px-4 py-2" value="Git, Docker, AWS">
+        <input type="text" name="concepts" placeholder="Concepts" class="block mb-2 w-full border rounded px-4 py-2" value="Microservices, Authentication & Authorization, API Development, Agile Methodology, Cloud Computing">
         <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded shadow">Update</button>
       </form>
     </div>
@@ -69,11 +67,12 @@
     <!-- Projects Form -->
     <div class="mb-8">
       <h2 class="text-xl font-bold mb-2">Projects</h2>
-      <!-- Add more input fields as needed -->
       <form action="/edit/projects" method="POST">
-        <input type="text" name="projectTitle" placeholder="Project Title" class="block mb-2 w-full border rounded px-4 py-2">
-        <input type="text" name="projectTech" placeholder="Project Technologies" class="block mb-2 w-full border rounded px-4 py-2">
-        <textarea name="projectDescription" placeholder="Project Description" class="block mb-2 w-full border rounded px-4 py-2"></textarea>
+        <input type="text" name="projectTitle" placeholder="Project Title" class="block mb-2 w-full border rounded px-4 py-2" value="Ed Tech Platform">
+        <input type="text" name="projectTech" placeholder="Project Technologies" class="block mb-2 w-full border rounded px-4 py-2" value="React.js, Django, Flask">
+        <textarea name="projectDescription" placeholder="Project Description" class="block mb-2 w-full border rounded px-4 py-2">Led the development of a microservices-based e-commerce platform using Node.js.
+Designed and deployed a scalable RESTful API using Django and Django REST Framework, enhancing data retrieval speed.
+Implemented a real-time chat feature using WebSocket and Socket.io, improving user engagement.</textarea>
         <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded shadow">Update</button>
       </form>
     </div>
@@ -81,11 +80,10 @@
     <!-- Education Form -->
     <div class="mb-8">
       <h2 class="text-xl font-bold mb-2">Education</h2>
-      <!-- Add more input fields as needed -->
       <form action="/edit/education" method="POST">
-        <input type="text" name="degree" placeholder="Degree" class="block mb-2 w-full border rounded px-4 py-2">
-        <input type="text" name="gpa" placeholder="GPA" class="block mb-2 w-full border rounded px-4 py-2">
-        <input type="text" name="coursework" placeholder="Relevant Coursework" class="block mb-2 w-full border rounded px-4 py-2">
+        <input type="text" name="degree" placeholder="Degree" class="block mb-2 w-full border rounded px-4 py-2" value="Bachelor’s degree in Computer Science and Engineering, Siksha ’O’ Anusandhan University (May 2022)">
+        <input type="text" name="gpa" placeholder="GPA" class="block mb-2 w-full border rounded px-4 py-2" value="7.6">
+        <input type="text" name="coursework" placeholder="Relevant Coursework" class="block mb-2 w-full border rounded px-4 py-2" value="Data Structures and Algorithms (C++), Probability & Statistics in CS (Python), Internet of Things, Cloud Computing, Unix Networking">
         <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded shadow">Update</button>
       </form>
     </div>

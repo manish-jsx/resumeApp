@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Editor</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans leading-normal tracking-normal">
+
+  <div class="container mx-auto px-4 py-8">
+
+    <h1 class="text-3xl font-bold mb-4">Resume Editor</h1>
+
+    <!-- Personal Info Form -->
+    <div class="mb-8" id="personalInfoForm">
+      <h2 class="text-xl font-bold mb-2">Personal Info</h2>
+      <!-- Placeholder values will be filled dynamically -->
+    </div>
+
+    <!-- Objective Form -->
+    <div class="mb-8" id="objectiveForm">
+      <h2 class="text-xl font-bold mb-2">Objective</h2>
+      <!-- Placeholder values will be filled dynamically -->
+    </div>
+
+    <!-- Experience Form -->
+    <div class="mb-8" id="experienceForm">
+      <h2 class="text-xl font-bold mb-2">Experience</h2>
+      <!-- Placeholder values will be filled dynamically -->
+    </div>
+
+    <!-- Skills Form -->
+    <div class="mb-8" id="skillsForm">
+      <h2 class="text-xl font-bold mb-2">Skills</h2>
+      <!-- Placeholder values will be filled dynamically -->
+    </div>
+
+    <!-- Projects Form -->
+    <div class="mb-8" id="projectsForm">
+      <h2 class="text-xl font-bold mb-2">Projects</h2>
+      <!-- Placeholder values will be filled dynamically -->
+    </div>
+
+    <!-- Education Form -->
+    <div class="mb-8" id="educationForm">
+      <h2 class="text-xl font-bold mb-2">Education</h2>
+      <!-- Placeholder values will be filled dynamically -->
+    </div>
+
+  </div>
+
+  <script>
+    // Function to fetch content from index.html and populate forms
+    async function populateForms() {
+      try {
+        const response = await fetch('index.html');
+        const htmlContent = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(htmlContent, 'text/html');
+
+        // Personal Info Form
+        document.getElementById('personalInfoForm').innerHTML = doc.querySelector('.container > div').outerHTML;
+
+        // Objective Form
+        document.getElementById('objectiveForm').innerHTML = doc.querySelector('.container > div > .mb-6:nth-child(2)').outerHTML;
+
+        // Experience Form
+        document.getElementById('experienceForm').innerHTML = doc.querySelector('.container > div > .mb-6:nth-child(3)').outerHTML;
+
+        // Skills Form
+        document.getElementById('skillsForm').innerHTML = doc.querySelector('.container > div > .mb-6:nth-child(4)').outerHTML;
+
+        // Projects Form
+        document.getElementById('projectsForm').innerHTML = doc.querySelector('.container > div > .mb-6:nth-child(5)').outerHTML;
+
+        // Education Form
+        document.getElementById('educationForm').innerHTML = doc.querySelector('.container > div > .mb-6:nth-child(6)').outerHTML;
+
+      } catch (error) {
+        console.error('Error fetching and populating forms:', error);
+      }
+    }
+
+    // Call the function to populate forms
+    populateForms();
+  </script>
+
+</body>
+</html>

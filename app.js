@@ -17,6 +17,10 @@ const resumeTemplate = fs.readFileSync(path.join(__dirname, 'templates', 'index.
 // Load the admin.html file for admin panel
 const adminTemplate = fs.readFileSync(path.join(__dirname, 'templates', 'admin.html'), 'utf8');
 
+// Load the dynamic.html for testing
+
+const dynamicTemplate = fs.readFileSync(path.join(__dirname,'templates','dynamic.html'),'utf8');
+
 // Route to render the resume editor
 app.get('/edit', (req, res) => {
     // Render the admin panel for editing resume
@@ -29,7 +33,11 @@ app.get('/', (req, res) => {
     res.send(resumeTemplate);
 });
 
-
+// Route to render the dynamic resume editor
+app.get('/dynamic', (req, res) => {
+    // Render the admin panel for editing resume
+    res.send(dynamicTemplate);
+});
 
 
 
