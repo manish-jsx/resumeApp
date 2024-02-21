@@ -4,7 +4,8 @@
   "description": "A simple Express.js application for managing and updating a resume.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "echo 'No build process required'"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
