@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Admin Panel</title>
+</head>
+<body>
+  <h1>Edit Resume</h1>
+  <form action="/admin/update-resume" method="POST" id="resumeForm">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" value=""><br>
+
+    <!-- Add other input fields for resume editing -->
+
+    <input type="submit" value="Update Resume">
+  </form>
+
+  <!-- Print as PDF button -->
+  <button onclick="printAsPdf()">Print as PDF</button>
+
+  <script>
+    function printAsPdf() {
+      // Fetch updated resume data from the server
+      fetch('/resume')
+        .then(response => response.json())
+        .then(resumeData => {
+          // Generate PDF content
+          const pdfContent = `
+            <h1>${resumeData.name}</h1>
+            <!-- Add other resume fields -->
+          `;
+
+          // Create a new window for PDF content
+          const printWindow = window.open('', '_blank');
+          printWindow.document.open();
+          printWindow.document.write(pdfContent);
+          printWindow.document.close();
+
+          // Print the PDF
+          printWindow.print();
+        })
+        .catch(error => {
+          console.error('Error fetching resume data:', error);
+        });
+    }
+  </script>
+</body>
+</html>
