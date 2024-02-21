@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manish Kumar - Resume</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans leading-normal tracking-normal">
+
+    <!-- Print as PDF button -->
+  <button onclick="printAsPdf()" class="fixed top-4 right-4 bg-blue-500 text-white px-4 py-2 rounded shadow">Print as PDF</button>
+
+
+  <!-- Container -->
+  <div class="container mx-auto flex flex-col justify-center px-4 py-8 md:py-24 md:flex-row">
+
+    
+   
+         <!-- Left Column -->
+    <div class="md:w-1/3 md:mr-6 mb-6">
+      <!-- Personal Info -->
+      <div class="p-4 bg-white rounded shadow">
+        <h1 class="text-3xl font-bold mb-2">Manish Kumar</h1>
+        <p>+917004456733</p>
+      
+        <p>manish.jsx@gmail.com</p>
+        <p><a href="linkedin.com/manish-code" class="text-blue-500">linkedin.com/manish-code</a></p>
+        <p><a href="https://github.com/manish-jsx" class="text-blue-500">github.com/manish-jsx</a></p>
+      </div>
+
+      <!-- Objective -->
+      <div class="mb-6">
+        <h2 class="text-xl font-bold mb-2">Objective</h2>
+        <p class="text-justify">Detail-oriented and motivated professional seeking a challenging role as a React Developer. With proficiency in JavaScript and expertise in React.js, I aim to leverage my skills to develop interactive and efficient user interfaces. Eager to contribute to dynamic projects and collaborate with cross-functional teams to deliver high-quality solutions that meet client needs while staying updated with the latest developments in web development technologies.</p>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    
+    <div class="md:w-2/3 md:ml-6 mb-6">
+
+      <!-- Experience -->
+      <div class="mb-6">
+        <h2 class="text-xl font-bold mb-2">Experience</h2>
+        
+        <!-- Job Experience Items -->
+        <div class="mb-4">
+          <h3 class="text-lg font-semibold">Senior Back-End Developer</h3>
+          <p class="text-sm italic">Upwork, Fiverr (Aug 2022 – Present)</p>
+          <ul class="list-disc list-inside ml-4">
+            <li>Developed tailored web application solutions utilizing Python frameworks including Django, Flask, and FastAPI.</li>
+            <li>Designed schemas for both SQL and NoSQL databases, ensuring efficient data management.</li>
+            <li>Implemented secure Role-Based Access Control (RBAC) APIs to address specific business requirements.</li>
+            <li>Leveraged technologies such as MongoDB, AWS S3, and PostgreSQL to optimize project outcomes.</li>
+          </ul>
+        </div>
+        <!-- More job experience items... -->
+      </div>
+
+      <!-- Skills -->
+      <div class="mb-6">
+        <h2 class="text-xl font-bold mb-2">Skills</h2>
+        <div class="flex flex-wrap">
+          <div class="w-full sm:w-1/2 md:w-1/3">
+            <p class="mb-2"><strong>Languages:</strong> Python, JavaScript</p>
+            <p class="mb-2"><strong>Frameworks:</strong> React.js, Angular, Django, Flask, FastAPI</p>
+          </div>
+          <div class="w-full sm:w-1/2 md:w-1/3">
+            <p class="mb-2"><strong>Databases:</strong> PostgreSQL, MongoDB, MySQL</p>
+            <p class="mb-2"><strong>Tools & Technologies:</strong> Git, Docker, AWS</p>
+          </div>
+          <div class="w-full sm:w-1/2 md:w-1/3">
+            <p class="mb-2"><strong>Concepts:</strong> Microservices, Authentication & Authorization, API Development, Agile Methodology, Cloud Computing</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div class="mb-6">
+        <h2 class="text-xl font-bold mb-2">Projects</h2>
+        
+        <!-- Project Items -->
+        <div class="mb-4">
+          <h3 class="text-lg font-semibold">Ed Tech Platform</h3>
+          <p class="text-sm italic">React.js, Django, Flask</p>
+          <ul class="list-disc list-inside ml-4">
+            <li>Led the development of a microservices-based e-commerce platform using Node.js.</li>
+            <li>Designed and deployed a scalable RESTful API using Django and Django REST Framework, enhancing data retrieval speed.</li>
+            <li>Implemented a real-time chat feature using WebSocket and Socket.io, improving user engagement.</li>
+          </ul>
+        </div>
+        <!-- More project items... -->
+      </div>
+
+      <!-- Education -->
+      <div class="mb-6">
+        <h2 class="text-xl font-bold mb-2">Education</h2>
+        <p class="text-sm italic">Bachelor’s degree in Computer Science and Engineering, Siksha ’O’ Anusandhan University (May 2022)</p>
+        <ul class="list-disc list-inside ml-4">
+          <li>GPA: 7.6</li>
+          <li>Relevant Coursework: Data Structures and Algorithms (C++), Probability & Statistics in CS (Python), Internet of Things, Cloud Computing, Unix Networking</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+   <script>
+    function printAsPdf() {
+      window.print();
+    }
+  </script>
+
+</body>
+</html>
